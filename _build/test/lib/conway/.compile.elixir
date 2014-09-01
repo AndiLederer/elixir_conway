@@ -1,4 +1,4 @@
-_build/test/lib/conway/ebin/Elixir.Conway.beam	Elixir.Conway	lib/conway.ex	Elixir
-_build/test/lib/conway/ebin/Elixir.Live.beam	Elixir.Live	lib/live.ex	Elixir.Enum	erlang	random	Elixir
 _build/test/lib/conway/ebin/Elixir.Board.beam	Elixir.Board	lib/board.ex	Elixir.Enum	Elixir.Live	Elixir.Module	erlang	random	Elixir
-_build/test/lib/conway/ebin/Elixir.Surrounding.beam	Elixir.Surrounding	lib/surrounding.ex	Elixir.Enum	Elixir.IO	Elixir.Integer	Elixir.Kernel	Elixir.Module	erlang	Elixir
+_build/test/lib/conway/ebin/Elixir.Live.beam	Elixir.Live	lib/live.ex	Elixir.Enum	erlang	random	Elixir
+_build/test/lib/conway/ebin/Elixir.Conway.beam	Elixir.Conway	lib/conway.ex	Elixir
+_build/test/lib/conway/ebin/Elixir.Surrounding.beam	Elixir.Surrounding	lib/surrounding.ex	Elixir.Enum	Elixir.Kernel	Elixir.Module	erlang	Elixir

@@ -2,7 +2,7 @@ defmodule Surrounding do
 
   def get_surrounding(board,{x,y}) do
     # Alle Positionen von x-1,y-1 bis x+1,y+1 werden durchsucht
-    # alle x-1 bis x+1 durchlaufen, innerhalb dieser durchläufe wieder alle Unterpositionen auswerten
+    # alle x-1 bis x+1 durchlaufen, innerhalb dieser durchlaufe wieder alle Unterpositionen auswerten
 
     filtered_rows = Enum.filter(board,fn({position,column})-> 
           check_position_range(y,position)
@@ -16,8 +16,8 @@ defmodule Surrounding do
   und innerhalb dieser durch alle x-Positionen
   """
   defp get_surrounding_row([head|tail],{x,y},result_list) do
-    IO.puts "--------------------"
-    IO.puts elem(head,0)
+    #IO.puts "--------------------"
+    #IO.puts elem(head,0)
     
     column = elem(head,1)
     result_list = column_stepper(column,{x,y},[],0,elem(head,0)) ++ result_list
@@ -32,8 +32,8 @@ defmodule Surrounding do
   end
 
   defp column_stepper([head|tail],{x,y},result_list,positionX,positionY) do
-    IO.puts "===================="
-    IO.puts positionX
+    #IO.puts "===================="
+    #IO.puts positionX
     if check_position({x,y},{positionX,positionY}) do
       result_list = [head] ++ result_list
     end
@@ -52,14 +52,7 @@ defmodule Surrounding do
   end
 
   defp check_position_range(center, position) do
-    
-    bool = center-1<=position and center+1>=position
-    if bool do
-      IO.puts ["checkPosition ",Integer.to_string(center),Integer.to_string(position),"true"]
-    else
-      IO.puts ["checkPosition ",Integer.to_string(center),Integer.to_string(position),"false"]
-    end
-    bool
+    center-1<=position and center+1>=position
   end
 
 end
