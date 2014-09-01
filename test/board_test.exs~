@@ -1,0 +1,9 @@
+defmodule BoardTest do
+ use ExUnit.Case
+
+ test "create board" do
+   board = Board.create_board(10,10)
+   assert Enum.count(board)==10
+ end
+
+end

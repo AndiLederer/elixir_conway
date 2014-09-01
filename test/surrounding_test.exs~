@@ -1,0 +1,8 @@
+defmodule SurroundingTest do
+ use ExUnit.Case
+
+  test "create new live" do
+    cell = Live.create()
+    assert cell == 0 || cell == 1
+  end
+end

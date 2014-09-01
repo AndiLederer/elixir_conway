@@ -1,0 +1,7 @@
+defmodule Surrounding do
+
+  def get_surrounding(board,x,y) do
+
+  end
+
+end
