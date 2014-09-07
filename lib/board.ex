@@ -11,8 +11,30 @@ defmodule Board do
     mapped_rows = Enum.map(board, fn {row_num,row} -> 
         Enum.join(row, "")
       end) 
-    Enum.join(mapped_rows,"")
+    Enum.join(mapped_rows,"\r\n")
+  end
 
+  def cycle(board) do
+    Enum.map(board, fn {row_num,row} ->
+      new_row = cycle_row(board,row,{0,row_num})
+      Enum.count(new_row)
+      {row_num,new_row}
+    end)
+  end
+
+  defp cycle_row(board,[],position) do
+    []
+  end
+
+  defp cycle_row(board,[head|tail],position) do
+    {x,y} = position
+    new_cell_value = validate_position(board,position,head)
+    [new_cell_value | cycle_row(board,tail,{x+1,y})]
+  end
+  
+  defp validate_position(board,position,cell) do
+    surrounding = Surrounding.get_surrounding(board,position)
+    Live.validate(cell,surrounding) 
   end
 
   defp create_row(length,height) do
