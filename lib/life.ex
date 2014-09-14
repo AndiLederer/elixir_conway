@@ -1,4 +1,4 @@
-defmodule Live do
+defmodule Life do
   def create do
     round(:random.uniform)
   end
