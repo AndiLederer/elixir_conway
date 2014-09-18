@@ -1,4 +1,5 @@
+_build/dev/lib/conway/ebin/Elixir.Conway.beam	Elixir.Conway	lib/conway.ex	Elixir
+_build/dev/lib/conway/ebin/Elixir.Game.beam	Elixir.Game	lib/Game.ex	Elixir.Board	Elixir.IO	erlang	Elixir
+_build/dev/lib/conway/ebin/Elixir.Life.beam	Elixir.Life	lib/life.ex	Elixir.Enum	erlang	random	Elixir
+_build/dev/lib/conway/ebin/Elixir.Board.beam	Elixir.Board	lib/board.ex	Elixir.Enum	Elixir.Life	Elixir.Module	Elixir.Surrounding	Elixir.Task	erlang	random	Elixir
 _build/dev/lib/conway/ebin/Elixir.Surrounding.beam	Elixir.Surrounding	lib/surrounding.ex	Elixir.Enum	Elixir.Kernel	Elixir.Module	erlang	Elixir
-_build/dev/lib/conway/ebin/Elixir.Live.beam	Elixir.Live	lib/live.ex	Elixir.Enum	erlang	random	Elixir
-_build/dev/lib/conway/ebin/Elixir.Conway.beam	Elixir.Conway	lib/conway.ex	Elixir.Application	Elixir.Board	Elixir.IO	Elixir.Kernel	Elixir.Module	erlang	Elixir
-_build/dev/lib/conway/ebin/Elixir.Board.beam	Elixir.Board	lib/board.ex	Elixir.Enum	Elixir.Live	Elixir.Module	Elixir.Surrounding	Elixir.Task	erlang	random	Elixir
