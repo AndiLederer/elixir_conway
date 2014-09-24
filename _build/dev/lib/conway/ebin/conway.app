@@ -2,6 +2,7 @@
              [{registered,[]},
               {description,"conway"},
               {applications,[kernel,stdlib,elixir,logger]},
-              {vsn,"0.0.1"},
-              {modules,['Elixir.Board','Elixir.Conway','Elixir.Game',
-                        'Elixir.Life','Elixir.Surrounding']}]}.
+              {vsn,"0.0.2"},
+              {modules,['Elixir.Board','Elixir.Conway','Elixir.Life',
+                        'Elixir.Server.Server','Elixir.Server.Supervisor',
+                        'Elixir.Surrounding']}]}.

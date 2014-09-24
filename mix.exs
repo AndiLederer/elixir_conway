@@ -3,8 +3,8 @@ defmodule Conway.Mixfile do
 
   def project do
     [app: :conway,
-     version: "0.0.1",
-     elixir: "~> 0.15.0",
+     version: "0.0.2",
+     elixir: "~> 1.0.0",
      deps: deps]
   end
 
@@ -26,6 +26,6 @@ defmodule Conway.Mixfile do
   #
   # Type `mix help deps` for more examples and options
   defp deps do
-    [{:json, "~> 0.3.0"}]
+    []
   end
 end
