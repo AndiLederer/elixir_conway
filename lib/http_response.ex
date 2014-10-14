@@ -9,7 +9,7 @@ defmodule HttpResponse do
     [boardAgent|rest] = _opts
     board = BoardAgent.get(boardAgent)
     conn |> put_resp_content_type("text/plain")
-    |> send_resp(200,Board.print_board(board))
+    |> send_resp(200,board)
   end
 
 end

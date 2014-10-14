@@ -6,6 +6,10 @@ defmodule BoardAgent do
 
 
   def get(boardAgent) do
-    Agent.get(boardAgent, &Board.cycle(&1))
+    Agent.update(boardAgent, &Board.cycle(&1))
+    Agent.get(boardAgent, &Board.print_board(&1))
   end
+
+
+
 end
