@@ -15,7 +15,7 @@ defmodule BoardTest do
   end 
 
   test "cycle throug board" do
-    board = Board.create_board(10,10)
+    board = Board.create_board(50,50)
     first_printable = Board.print_board(board)
     IO.puts "------------------"
     IO.puts first_printable

@@ -12,8 +12,8 @@ defmodule Conway.Mixfile do
   #
   # Type `mix help compile.app` for more information
   def application do
-    [applications: [:logger,:cowboy, :plug]] #,
-#     mod: {Conway,[]}]
+    [applications: [:logger,:cowboy, :plug] ,
+     mod: {Conway,[]}]
   end
 
   # Dependencies can be hex.pm packages:

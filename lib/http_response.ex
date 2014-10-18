@@ -1,15 +1,18 @@
 defmodule HttpResponse do
   import Plug.Conn
+  use Plug.Router
 
-  def init(options) do
-    options
-  end 
-  
-  def call(conn,_opts) do
-    [boardAgent|rest] = _opts
-    board = BoardAgent.get(boardAgent)
-    conn |> put_resp_content_type("text/plain")
-    |> send_resp(200,board)
+  plug :match
+  plug :dispatch
+
+  get "/board" do
+    board = BoardAgent.get()
+    conn |> send_resp(200,board)
+  end
+
+  get "/" do
+    {:ok,text} = File.read("E:/LEDERER/dokumente/GitHub/elixier_conway/index.html")
+    conn |> send_resp(200,text)
   end
 
 end
