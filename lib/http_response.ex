@@ -11,7 +11,7 @@ defmodule HttpResponse do
   end
 
   get "/" do
-    {:ok,text} = File.read("E:/LEDERER/dokumente/GitHub/elixier_conway/index.html")
+    {:ok,text} = File.read("./index.html")
     conn |> send_resp(200,text)
   end
 
