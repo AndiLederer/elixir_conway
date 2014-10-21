@@ -7,7 +7,7 @@
     xmlhttp.onreadystatechange=function()
     {
       if (xmlhttp.readyState==4 && xmlhttp.status==200){
-		document.getElementById("output").innerHTML= xmlhttp.responseText;
+		document.getElementById("output").innerHTML= '<p>'+xmlhttp.responseText+'</p>';
       }
     }
 	xmlhttp.open("GET","http://localhost:4000/board",true);

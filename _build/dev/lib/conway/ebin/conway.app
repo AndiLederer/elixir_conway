@@ -1,9 +1,0 @@
-{application,conway,
-             [{registered,[]},
-              {description,"conway"},
-              {applications,[kernel,stdlib,elixir,logger,cowboy,plug]},
-              {mod,{'Elixir.Conway',[]}},
-              {vsn,"0.0.2"},
-              {modules,['Elixir.Board','Elixir.BoardAgent','Elixir.Conway',
-                        'Elixir.ConwaySupervisor','Elixir.HttpResponse',
-                        'Elixir.Life','Elixir.Surrounding']}]}.

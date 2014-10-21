@@ -11,7 +11,7 @@ defmodule Board do
     mapped_rows = Enum.map(board, fn {row_num,row} -> 
         Enum.join(row, "")
       end) 
-    Enum.join(mapped_rows,"\r\n")
+    Enum.join(mapped_rows,"<br>")
   end
 
   def cycle(board) do
